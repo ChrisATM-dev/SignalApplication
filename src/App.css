@@ -3,19 +3,28 @@ body{
   margin: 0;
   padding: 0;
 }
+.container-app{
+  display: flex;
+  flex-direction: column;
+}
 
 .container-nav{
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 40px;
+
 }
 
-.examen{
+.buttom-controller{
   color: white;
-  background-color: blue;
-  border: 2px solid blue;
+  background-color: rgb(122, 122, 122);
   border-radius: 20%;
+  border: 0;
   width: 100px;
   height: 40px;
+}
+.buttom-controller:hover{
+  cursor: pointer;
 }
 
 .question-bar{
@@ -30,6 +39,7 @@ body{
 .container-question{
   display: flex;
   flex-direction: column;
+  height: 520px;
 }
 .container-question img{
   width: 200px;
@@ -64,4 +74,12 @@ body{
     flex-direction: column;
     align-items: center;
   }
+  .container-app{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .question-bar{
+    margin-top: 30px;
+  }
+
 }

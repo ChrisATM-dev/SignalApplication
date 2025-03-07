@@ -276,7 +276,7 @@ export const signals = [{
 },
 {
     id: 47,
-    nombre: 'Superficiesegregada peatones biciclos',
+    nombre: 'Superficie segregada peatones biciclos',
     image: 'image/superficie-segregada-peatones-biciclos.svg',
     categoria: 'Reglamentarias'
 },
