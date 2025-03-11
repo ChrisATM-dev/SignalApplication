@@ -19,7 +19,7 @@ export const Examen = () => {
     }
 
   return (
-    <div className='container-app'>
+    <div className='container-app-examen'>
       <QuestionController 
         counter={counter} 
         increment={increment} 

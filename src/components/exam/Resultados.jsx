@@ -1,5 +1,3 @@
-import '../../styles/resultados.css'
-
 import React, { useContext } from 'react'
 import { SignalContext } from '../../context/SignalContext'
 import { NavLink } from 'react-router-dom'
