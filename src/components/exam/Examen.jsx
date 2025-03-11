@@ -1,12 +1,11 @@
 // Hooks
 import React, { useContext } from 'react'
-import { useCounter } from '../hooks/useCounter';
+import { useCounter } from '../../hooks/useCounter';
 
 // Components
-import { QuestionController } from './questionController';
-import { SignalQuestion } from './SignalQuestion';
 import { NavLink } from 'react-router-dom';
-import { SignalContext } from '../context/SignalContext';
+import { SignalContext } from '../../context/SignalContext';
+import { QuestionController, SignalQuestion } from './';
 
 export const Examen = () => {
     const {state, dispatch, cantidadSenales} = useContext(SignalContext)

@@ -1,13 +1,16 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
-import './App.css'
-import { Examen } from './components/Examen'
-import { Resultados } from './components/Resultados'
-import { Home } from './components/Home'
-import { ExamenLayout } from './layouts/ExamenLayout'
+import './App.css';
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+
+// Examen
+import { ExamenLayout } from './layouts/ExamenLayout';
+import { Examen, Resultados } from './components/exam';
+
+// Home
+import { Home } from './components/home';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className='container-nav'>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/examen'>Examen</NavLink>
@@ -19,7 +22,7 @@ function App() {
           <Route path="resultados" element={<Resultados/>}/>
         </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 

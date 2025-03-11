@@ -1,8 +1,8 @@
-import '../styles/resultados.css'
+import '../../styles/resultados.css'
 
 import React, { useContext } from 'react'
-import { SignalContext } from '../context/SignalContext'
-
+import { SignalContext } from '../../context/SignalContext'
+import { NavLink } from 'react-router-dom'
 
 /// crear funciones para mostrar los resultados
 export const Resultados = () => {
@@ -42,7 +42,7 @@ const filas = state.map( (pregunta, index)=> {
           </tbody>
       </table>
       <div className='container-salir'>
-        <button onClick={()=>console.log(state)}>Ver estado</button>
+        <NavLink to="/">Volver al home</NavLink> 
       </div>
     </div>
   )
