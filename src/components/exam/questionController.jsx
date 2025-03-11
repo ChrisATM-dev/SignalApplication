@@ -9,7 +9,7 @@ export const QuestionController = ({counter, increment, decrement, setSpecificVa
 
   return (
     <div className='question-bar'>
-      <button className='buttom-controller' onClick={decrement}>disminuir</button>
+      <button className='buttom-controller' onClick={decrement}>Anterior</button>
       <div className='question-selector'>
         <select 
           value={counter} 
@@ -24,7 +24,7 @@ export const QuestionController = ({counter, increment, decrement, setSpecificVa
         </select>
         <span>/{cantidadSenales}</span>
       </div>
-      <button className='buttom-controller' onClick={increment}>aumentar</button>
+      <button className='buttom-controller' onClick={increment}>Siguiente</button>
     </div>
   )
 }

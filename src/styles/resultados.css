@@ -43,6 +43,15 @@ td img{
     justify-content: end;
     margin: 20px 10%;
 }
+
+.container-estadisticas{
+    display: flex;
+    justify-content: end;
+}
+.container-estadisticas-cabecera, thead{
+    background-color: rgb(160 160 160);    
+}
+
 @media (max-width: 500px) {
     table{
         margin: 0;

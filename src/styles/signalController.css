@@ -10,9 +10,8 @@
   .buttom-controller{
     color: white;
     background-color: rgb(122, 122, 122);
-    border-radius: 20%;
     border: 0;
-    width: 100px;
+    width: 70px;
     height: 40px;
   }
   .buttom-controller:hover{

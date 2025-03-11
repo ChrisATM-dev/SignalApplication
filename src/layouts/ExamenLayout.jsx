@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import { SignalProvider } from '../context/SignalProvider'
 
+// styles
 import '../styles/resultados.css'
 import '../styles/signalController.css'
 export const ExamenLayout = () => {

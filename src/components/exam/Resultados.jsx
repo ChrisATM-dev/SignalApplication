@@ -24,6 +24,20 @@ const filas = state.map( (pregunta, index)=> {
   return (
     <div className='tabla-container'>
       <h1>Resultados</h1>
+      <div className='container-estadisticas'>
+        <table>
+          <tbody>
+            <tr className='container-estadisticas-cabecera'>
+              <td>Correctas</td>
+              <td>Total</td>
+            </tr>
+            <tr>
+              <td>{state.filter(pregunta => pregunta.respuestas.find(respuesta => respuesta.isSelected && respuesta.res === pregunta.nombre)).length}</td>
+              <td>{state.length}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <table>
         <thead>
           <tr>
